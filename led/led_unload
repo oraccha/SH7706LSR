@@ -1,0 +1,8 @@
+#!/bin/sh
+
+module="shmin_led"
+device="led"
+
+/sbin/rmmod ${module} || exit 1
+
+rm -f /dev/${device}
